@@ -1,0 +1,161 @@
+/*стилі для шапки>>*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #d435cd;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -ms-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.menuItem {
+    display: inline-block;
+    position: relative;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hideMenuList>li {
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.nav ul ul {
+    background-color: #aa00a2;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+
+/* скрытие подменю */
+
+.nav ul li:hover>ul,
+.nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.nav ul li ul li {
+    clear: both;
+    width: 200px;
+    padding-left: 20px;
+}
+
+.nav ul li ul {
+    cursor: pointer;
+}
+
+.nav ul li ul li:hover {
+    clear: both;
+    width: 200px;
+    padding-left: 20px;
+    background-color: #6f006a;
+}
+
+.headerItem>button {
+    padding: 10px;
+    height: 50px;
+}
+
+.nav ul li:hover ul {
+    display: block;
+}
+
+
+/*открытие подменю*/
+
+.headerItem>ul {
+    display: block;
+    /* Ссылка как блочный элемент */
+    /* Выравнивание по центру */
+    /* Высота на весь слой */
+    white-space: nowrap;
+    color: rgb(152, 159, 172);
+    transition: all 0.3s ease;
+    align-items: center;
+    list-style: none;
+}
+
+.headerItem>ul>li {
+    padding: 10px 0px;
+}
+
+.headerButtonMenu {
+    display: block;
+    justify-content: center;
+}
+
+.headerButtonMenu>button:hover {
+    color: rgb(215, 227, 247);
+    transition: all 0.3s ease;
+}
+
+#mobileMenu {
+    width: 230px;
+    z-index: 1000;
+    background-color: #6f006a;
+    font-size: 0.7em;
+    display: none;
+    margin-top: 50px;
+}
+
+.mobileMenuList,
+.mobMenu {
+    list-style: none;
+}
+
+.mobMenu {
+    padding: 0;
+}
+
+.menuShow {
+    display: none;
+}
+
+.mobileItem>p {
+    color: #f1f1f1;
+}
+
+.headerButton {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.headerButton:hover {
+    color: rgb(83, 243, 168);
+}
+
+.logo {
+    color: rgb(83, 243, 168);
+    font-size: 1.3em;
+    font-family: "Roboto";
+    padding: 10px;
+}
+
+.logo :hover {
+    color: rgb(0, 255, 213);
+}
+
+
+/*<<стилі для шапки*/

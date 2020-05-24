@@ -1,0 +1,74 @@
+/* фрома реєстрації та авторизації>> */
+
+.formReg_Log {
+    /* display: none; */
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    z-index: 1;
+    background-color: #fff;
+}
+
+#closeLog,
+#closeReg,
+#closeMenu,
+#closeSrch {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.formLog {
+    display: none;
+    width: 100%;
+}
+
+#search {
+    display: none;
+    width: 100%;
+}
+
+#noSr {
+    width: 100%;
+    text-align: center;
+    height: 800px;
+}
+
+#noSr>h2 {
+    margin-top: 200px;
+}
+
+
+/* стили для кнопки зарегестрироватся */
+
+.registerbtn,
+.loginbtn,
+.searchbtn,
+#feedbtn {
+    background-color: #aa00a2;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 99%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+}
+
+#noAcc,
+#Acc {
+    color: #4caf50;
+}
+
+
+/* <<фрома реєстрації ьа авторизації*/

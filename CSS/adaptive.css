@@ -1,0 +1,96 @@
+/* стилі для адаптивності>> */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .headerSection>button>span {
+        display: none;
+    }
+    .smallArticles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .headerSection>button>span {
+        display: none;
+    }
+    .hideMenu {
+        display: none;
+    }
+    .menuShow {
+        display: grid;
+    }
+    .smallArticles {
+        grid-template-columns: 1fr;
+    }
+    .formcontainer {
+        padding: 4px;
+    }
+    .registerbtn {
+        background-color: #aa00a2;
+        color: white;
+        padding: 4px 5px;
+        margin: 5px 0;
+        border: none;
+        cursor: pointer;
+        width: 99%;
+        opacity: 0.9;
+    }
+    .bigArticle {
+        width: 88%;
+        padding: 3%;
+        height: 80%;
+    }
+    .imageprod {
+        float: unset;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 70%;
+    }
+    .prodDescr {
+        width: 96%;
+        padding: 2%;
+    }
+    .Reg {
+        display: none;
+    }
+    .Regh {
+        font-size: 1em;
+    }
+    p.Log,
+    .Log {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: none;
+    }
+    .headerSection>button>span {
+        display: none;
+    }
+    .hideMenu {
+        display: none;
+    }
+    .menuShow {
+        display: grid;
+    }
+    .smallArticles {
+        grid-template-columns: 1fr;
+    }
+    .imageprod {
+        float: unset;
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 70%;
+    }
+}
+
+
+/* <<стилі для адаптивності */

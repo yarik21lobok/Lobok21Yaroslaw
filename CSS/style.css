@@ -1,0 +1,300 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e7e7;
+    color: #202020;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 135%;
+    float: left;
+}
+
+#site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    color: #a6f16c;
+    text-decoration: none;
+}
+
+a :hover {
+    color: #62aa2a;
+}
+
+.prodAll>a,
+.bigArticle>a {
+    color: #d435cd;
+}
+
+.prodAll>a:hover,
+.bigArticle>a:hover {
+    color: #6f006a;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+.imageprod {
+    width: 60%;
+    float: left;
+    max-height: 100%;
+    margin-right: 1%;
+}
+
+.prodDescr {
+    width: 39%;
+    float: left;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prodDescr>p {
+    max-height: 70%;
+    text-overflow: clip;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.Descrprod {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+a :hover {
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button,
+#btnOut_open
+/*стиль для кнопки виходу та кнопок */
+
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; */
+    cursor: pointer;
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -o-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+    transition: all.6s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto/0/*ie8*/
+    ;
+}
+
+
+/*стилі для всього документу>>*/
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* стилі для сторінки feedback>> */
+
+.feed {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#noLog {
+    height: 400px;
+    margin: 60px;
+}
+
+#noLog>p {
+    margin-top: 30px;
+}
+
+#Log {
+    min-height: 500px;
+}
+
+#Log>form>div>textarea {
+    width: 80%;
+    margin: 0 10%;
+}
+
+
+/* <<стилі для сторінки feedback */
+
+
+/* стилі для сторінки гарантії>> */
+
+#garant>.prodCat {
+    width: 400px;
+}
+
+#garant>.prodYEAR {
+    width: 120px;
+}
+
+.categserch {
+    margin: 100px;
+}
+
+.guarantee,
+#support {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: 30px;
+}
+
+.guarantee>div>h1 {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.guarantee>div>ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.guarantee>div>p {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.guarantee>div>h2 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+/* <<стилі для таблиці гарантії */
+
+#content {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bigArticle {
+    width: 92%;
+    margin: 2%;
+    height: 400px;
+    background-color: #a3a3a3;
+    color: #000;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.prodAll {
+    width: 92%;
+    margin: 2%;
+    background-color: #b9b8b8;
+    color: #000;
+    padding: 2%;
+}
+
+.smallArticles {
+    width: 96%;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px 20px;
+    grid-column: span 1;
+}
+
+.smallArticle {
+    color: black;
+    background-color: #fffbd2;
+}
+
+.smallArticle h3 {
+    margin-left: 2%;
+}
+
+.smallArticle img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/*<<стилі для всього документу*/
+
+
+/*<<стилі для низу сторінки пошуку */
+
+.formReg {
+    display: none;
+    width: 100%;
+}
+
+.formcontainer {
+    padding: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 98%;
+    padding: 1%;
+    margin: 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#pass {
+    visibility: hidden;
+    height: 5px;
+}
+
+.Log {
+    padding-bottom: 2px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
